@@ -1,4 +1,4 @@
-# GSI-UI
+# Welltrax-UI-Components
 
 It's an extension of the blueprint framework. It has other components that are not included in blueprintjs.
 
