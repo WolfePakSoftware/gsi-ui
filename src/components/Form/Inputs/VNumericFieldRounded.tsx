@@ -73,7 +73,7 @@ export const VNumericFieldRounded = observer((props: INumericFieldProps) => {
         } else {
           fieldState.validators(Validators.required);
         }
-      } else if (validators && validators.length > 0) {
+      } else if (validators && validators.length > 0 && fieldState.validators) {
         fieldState.validators(...validators);
       }
     }
