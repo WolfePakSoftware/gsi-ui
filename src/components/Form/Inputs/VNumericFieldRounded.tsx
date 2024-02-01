@@ -157,7 +157,7 @@ export const VNumericFieldRounded = observer((props: INumericFieldProps) => {
   };
 
   const setPropsValues = (val: any) => {
-    if (props.fieldState) {
+    if (props.fieldState && props.fieldState.onChange) {
       props.fieldState.onChange(parseToNumber(val));
     }
     if (props.onChange) {

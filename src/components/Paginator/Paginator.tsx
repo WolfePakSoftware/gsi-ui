@@ -232,7 +232,7 @@ export class VPagination extends Component<VPaginatorProps, IState> {
                       : this.getBackgroundHover()
                   }
                   colorHover={this.getColorHover()}
-                  onClick={e => {
+                  onClick={(e: any) => {
                     this.handleClick(page, e);
                   }}
                   isLast={index + 1 === pages.length}
@@ -341,7 +341,7 @@ export class VPagination extends Component<VPaginatorProps, IState> {
   private getRightPage(index: number) {
     return (
       <Page
-        onClick={e => {
+        onClick={(e: any) => {
           this.handleMoveRight(e);
         }}
         key={index}
@@ -355,7 +355,7 @@ export class VPagination extends Component<VPaginatorProps, IState> {
   private getLeftPage(index: number) {
     return (
       <Page
-        onClick={e => {
+        onClick={(e: any) => {
           this.handleMoveLeft(e);
         }}
         key={index}

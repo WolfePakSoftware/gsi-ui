@@ -248,7 +248,7 @@ export const VDateTimePicker = observer((props: IInputFieldProps) => {
       return (
         <IconDate
           backgroundColor={icon.backgroundColor}
-          onClick={e => {
+          onClick={(e: { stopPropagation: () => void; }) => {
             e.stopPropagation();
             if (isFocused && !isFocused.current) {
               dateRef?.current?.focus();
