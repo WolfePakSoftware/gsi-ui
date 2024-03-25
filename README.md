@@ -20,3 +20,9 @@ It's an extension of the blueprint framework. It has other components that are n
 - VToastNotification - Extension of @blueprintjs/core Toaster.
 - VOrgChart - Native Component uses orgchart library. Useful to represent hierarchies.
 - VSearchSelect - Select with virtual scroll
+
+## To build library UI.
+- npm run build
+
+## To publish libraryu on npm
+- npm publish
